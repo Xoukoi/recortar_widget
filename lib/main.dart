@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Recorte Widget',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       key: _globalKey,
       child: new Scaffold(
           appBar: new AppBar(
-            title: new Text('Widget To Image demo'),
+            title: new Text('Widget para extraer'),
           ),
           body: SingleChildScrollView(
             child: Center(
@@ -71,10 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   new Text(
-                    'click the button below to capture image',
+                    'click aqui para capturar la imagen',
                   ),
                   new RaisedButton(
-                    child: Text('capture Image'),
+                    child: Text('capturar imagen'),
                     onPressed: _capturePng,
                   ),
                   inside
