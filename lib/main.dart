@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       String bs64 = base64Encode(pngBytes);
       print(pngBytes);
       print(bs64);
-      print('png done');
+      print('a png');
       setState(() {
         imageInMemory = pngBytes;
         inside = false;
