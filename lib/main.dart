@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Recorte Widget',
+      title: 'Flutter Demo',
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
       String bs64 = base64Encode(pngBytes);
       print(pngBytes);
       print(bs64);
-      print('a png');
+      print('png done');
       setState(() {
         imageInMemory = pngBytes;
         inside = false;
@@ -63,7 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
       key: _globalKey,
       child: new Scaffold(
           appBar: new AppBar(
-            title: new Text('Widget para extraer'),
+            title: new Text('Widget To Image demo'),
           ),
           body: SingleChildScrollView(
             child: Center(
@@ -71,10 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   new Text(
-                    'click aqui para capturar la imagen',
+                    'click the button below to capture image',
                   ),
                   new RaisedButton(
-                    child: Text('capturar imagen'),
+                    child: Text('capture Image'),
                     onPressed: _capturePng,
                   ),
                   inside
